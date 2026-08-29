@@ -11,6 +11,8 @@ import CrosswordStep from "@/components/steps/CrosswordStep";
 import WheelJudgeStep from "@/components/steps/WheelJudgeStep";
 import WheelJudgeIconStep from "@/components/steps/WheelJudgeIconStep";
 import CardPickTranslateStep from "@/components/steps/CardPickTranslateStep";
+import SentenceScrambleStep from "@/components/steps/SentenceScrambleStep";
+import ReadMatchStep from "@/components/steps/ReadMatchStep";
 import ClockFinderStep from "@/components/steps/ClockFinderStep";
 import CompleteStep from "@/components/steps/CompleteStep";
 
@@ -28,6 +30,8 @@ function buildSteps(content) {
   if (content.wheelJudge) steps.push({ type: "wheelJudge", data: content.wheelJudge });
   if (content.wheelJudgeIcon) steps.push({ type: "wheelJudgeIcon", data: content.wheelJudgeIcon });
   if (content.cardPick) steps.push({ type: "cardPick", data: content.cardPick });
+  if (content.sentenceScramble) steps.push({ type: "sentenceScramble", data: content.sentenceScramble });
+  if (content.readMatch) steps.push({ type: "readMatch", data: content.readMatch });
   if (content.clockFinder) steps.push({ type: "clockFinder" });
   steps.push({ type: "complete" });
   return steps;
@@ -175,6 +179,22 @@ export default function LessonPlayer({ unitTitle, lessonTitle, topic, content, b
 
           {step.type === "cardPick" && (
             <CardPickTranslateStep
+              data={step.data}
+              onScore={(amount) => setScore((s) => s + amount)}
+              onDone={goNext}
+            />
+          )}
+
+          {step.type === "sentenceScramble" && (
+            <SentenceScrambleStep
+              data={step.data}
+              onScore={(amount) => setScore((s) => s + amount)}
+              onDone={goNext}
+            />
+          )}
+
+          {step.type === "readMatch" && (
+            <ReadMatchStep
               data={step.data}
               onScore={(amount) => setScore((s) => s + amount)}
               onDone={goNext}
