@@ -40,7 +40,7 @@ export default function ClockFinderStep({ board, data, onScore, onDone }) {
 
       <div className="rounded-2xl p-4 mb-4 flex items-center gap-3 bg-[#FBF3E1] shadow-soft">
         <div className="w-9 h-9 rounded-full bg-gradient-navy flex items-center justify-center flex-shrink-0">
-          <AudioButton text={round.promptText} size={16} idleColor="#FFF8ED" />
+          <AudioButton text={round.promptText} size={26} idleColor="#FFF8ED" />
         </div>
         <p className="text-sm font-bold text-navy italic">"{round.promptText}"</p>
       </div>

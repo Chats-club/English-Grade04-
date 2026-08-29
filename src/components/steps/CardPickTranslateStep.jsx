@@ -94,7 +94,7 @@ export default function CardPickTranslateStep({ data, onScore, onDone }) {
       {activeCard && !answered[activeCard.id] && (
         <div className="rounded-2xl p-4 bg-[#FBF3E1] shadow-soft mb-4">
           <div className="flex items-center gap-2 mb-3 justify-center">
-            <AudioButton text={activeCard.word} size={16} />
+            <AudioButton text={activeCard.word} size={24} />
             <span className="font-display font-bold text-navy">{activeCard.word}</span>
           </div>
           <div className="grid grid-cols-1 gap-2">

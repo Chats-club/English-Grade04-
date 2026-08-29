@@ -26,7 +26,7 @@ export default function FillConvStep({ data, onCorrect, onDone }) {
     <div>
       <div className="flex items-center justify-between mb-1">
         <SectionLabel>Fill in the blank</SectionLabel>
-        <AudioButton text={audioText} size={18} idleColor="#E8A83E" />
+        <AudioButton text={audioText} size={28} idleColor="#E8A83E" />
       </div>
       <p className="mb-3 text-sm italic text-[#5B6A72]">{data.scene}</p>
       <div className="rounded-2xl p-4 mb-4 space-y-3 bg-[#FBF3E1] shadow-soft">

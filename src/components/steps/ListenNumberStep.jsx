@@ -32,7 +32,7 @@ export default function ListenNumberStep({ data, characters, onCorrect, onDone }
       <p className="mb-4 text-sm text-[#5B6A72]">Tap the character who says this:</p>
       <div className="rounded-2xl p-4 mb-4 flex items-center gap-3 bg-[#FBF3E1] shadow-soft">
         <div className="w-9 h-9 rounded-full bg-gradient-navy flex items-center justify-center flex-shrink-0">
-          <AudioButton text={data.promptText} size={16} idleColor="#FFF8ED" />
+          <AudioButton text={data.promptText} size={26} idleColor="#FFF8ED" />
         </div>
         <p className="text-sm font-bold text-navy italic">"{data.promptText}"</p>
       </div>
