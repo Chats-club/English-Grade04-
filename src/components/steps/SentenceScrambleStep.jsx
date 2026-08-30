@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Check, RotateCcw } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
 import PrimaryButton from "@/components/ui/PrimaryButton";
@@ -16,8 +16,16 @@ function shuffle(arr) {
 // "Make a sentence" game: a target sentence's words are shown shuffled as
 // tappable chips. The pupil taps them in order to rebuild the sentence,
 // can tap a placed word to undo it, then checks their answer.
+//
+// Also reused for the "translate with decoy words" period: each round can
+// optionally include a `prompt` (an English cue sentence shown above,
+// with its own listen button) and `distractors` — extra chips mixed into
+// the pool that don't belong in the correct answer at all. The pupil must
+// pick out only the right words, in order, and leave the decoys unused.
+// `data.title`/`data.instructions` let a content module override the
+// default heading and instructions text for this alternate use.
 export default function SentenceScrambleStep({ data, onScore, onDone }) {
-  const { sentences } = data;
+  const { sentences, title, instructions } = data;
   const [roundIdx, setRoundIdx] = useState(0);
   const [pool, setPool] = useState([]);
   const [placed, setPlaced] = useState([]);
@@ -28,7 +36,12 @@ export default function SentenceScrambleStep({ data, onScore, onDone }) {
 
   useEffect(() => {
     const words = round.target.split(" ");
-    setPool(shuffle(words.map((w, i) => ({ id: `${i}-${w}`, word: w }))));
+    const distractors = round.distractors || [];
+    const tokens = [
+      ...words.map((w, i) => ({ id: `t-${i}-${w}`, word: w })),
+      ...distractors.map((w, i) => ({ id: `d-${i}-${w}`, word: w })),
+    ];
+    setPool(shuffle(tokens));
     setPlaced([]);
     setChecked(false);
     setCorrect(false);
@@ -72,12 +85,19 @@ export default function SentenceScrambleStep({ data, onScore, onDone }) {
   return (
     <div>
       <div className="flex items-center gap-2 mb-1">
-        <SectionLabel>Make a sentence</SectionLabel>
+        <SectionLabel>{title || "Make a sentence"}</SectionLabel>
         <AudioButton text={round.target} size={22} />
       </div>
-      <p className="mb-4 text-sm text-[#5B6A72]">
-        Listen, then tap the words in the correct order.
+      <p className="mb-3 text-sm text-[#5B6A72]">
+        {instructions || "Listen, then tap the words in the correct order."}
       </p>
+
+      {round.prompt && (
+        <div className="flex items-center gap-2 rounded-2xl px-3 py-2.5 mb-4 bg-[#FBF3E1] shadow-soft">
+          <AudioButton text={round.prompt} size={20} />
+          <span className="text-sm font-semibold text-navy">{round.prompt}</span>
+        </div>
+      )}
 
       <div className="min-h-[3.5rem] rounded-2xl p-3 mb-4 bg-[#FBF3E1] shadow-soft flex flex-wrap gap-2 items-center">
         {placed.length === 0 && (
@@ -116,7 +136,7 @@ export default function SentenceScrambleStep({ data, onScore, onDone }) {
       {!checked && (
         <button
           onClick={handleCheck}
-          disabled={pool.length > 0}
+          disabled={placed.length === 0}
           className="w-full rounded-2xl py-3 font-display font-bold text-sm bg-gradient-navy text-cream shadow-button hover:shadow-buttonHover disabled:opacity-40 transition-all mb-2"
         >
           Check

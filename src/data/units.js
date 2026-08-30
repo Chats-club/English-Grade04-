@@ -19,6 +19,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit1-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit1-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit1-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit1-lesson5-period9" },
     ],
   },
   {
@@ -35,6 +36,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit2-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit2-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit2-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit2-lesson5-period9" },
     ],
   },
   {
@@ -51,6 +53,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit3-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit3-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit3-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit3-lesson5-period9" },
     ],
   },
   {
@@ -67,6 +70,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit4-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit4-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit4-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit4-lesson5-period9" },
     ],
   },
   {
@@ -83,6 +87,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit5-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit5-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit5-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit5-lesson5-period9" },
     ],
   },
   {
@@ -99,6 +104,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit6-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit6-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit6-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit6-lesson5-period9" },
     ],
   },
   {
@@ -115,6 +121,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit7-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit7-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit7-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit7-lesson5-period9" },
     ],
   },
   {
@@ -131,6 +138,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit8-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit8-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit8-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit8-lesson5-period9" },
     ],
   },
   {
@@ -147,6 +155,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit9-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit9-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit9-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit9-lesson5-period9" },
     ],
   },
   {
@@ -163,6 +172,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit10-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit10-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit10-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit10-lesson5-period9" },
     ],
   },
   {
@@ -179,6 +189,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit11-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit11-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit11-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit11-lesson5-period9" },
     ],
   },
   {
@@ -195,6 +206,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading, project & spin game", contentKey: "unit12-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit12-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit12-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit12-lesson5-period9" },
     ],
   },
   {
@@ -211,6 +223,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit13-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit13-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit13-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit13-lesson5-period9" },
     ],
   },
   {
@@ -227,6 +240,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit14-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit14-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit14-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit14-lesson5-period9" },
     ],
   },
   {
@@ -243,6 +257,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit15-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit15-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit15-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit15-lesson5-period9" },
     ],
   },
   {
@@ -259,6 +274,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit16-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit16-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit16-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit16-lesson5-period9" },
     ],
   },
   {
@@ -275,6 +291,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading", contentKey: "unit17-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit17-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit17-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit17-lesson5-period9" },
     ],
   },
   {
@@ -291,6 +308,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & writing", contentKey: "unit18-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit18-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit18-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit18-lesson5-period9" },
     ],
   },
   {
@@ -307,6 +325,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Reading & project", contentKey: "unit19-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit19-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit19-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit19-lesson5-period9" },
     ],
   },
   {
@@ -323,6 +342,7 @@ export const UNITS = [
       { id: "period6", lessonLabel: "Lesson 3", title: "Period 6", topic: "Writing & project", contentKey: "unit20-lesson3-period6" },
       { id: "period7", lessonLabel: "Lesson 4", title: "Period 7", topic: "Make a sentence with mixed words", contentKey: "unit20-lesson4-period7" },
       { id: "period8", lessonLabel: "Lesson 4", title: "Period 8", topic: "Read and match", contentKey: "unit20-lesson4-period8" },
+      { id: "period9", lessonLabel: "Lesson 5", title: "Period 9", topic: "Translate into Vietnamese", contentKey: "unit20-lesson5-period9" },
     ],
   },
   // Add unit21 ... here as it's built.

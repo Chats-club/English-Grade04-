@@ -179,6 +179,27 @@ import * as unit19Lesson4Period8 from "./unit19-lesson4-period8";
 import * as unit20Lesson4Period7 from "./unit20-lesson4-period7";
 import * as unit20Lesson4Period8 from "./unit20-lesson4-period8";
 
+import * as unit1Lesson5Period9 from "./unit1-lesson5-period9";
+import * as unit2Lesson5Period9 from "./unit2-lesson5-period9";
+import * as unit3Lesson5Period9 from "./unit3-lesson5-period9";
+import * as unit4Lesson5Period9 from "./unit4-lesson5-period9";
+import * as unit5Lesson5Period9 from "./unit5-lesson5-period9";
+import * as unit6Lesson5Period9 from "./unit6-lesson5-period9";
+import * as unit7Lesson5Period9 from "./unit7-lesson5-period9";
+import * as unit8Lesson5Period9 from "./unit8-lesson5-period9";
+import * as unit9Lesson5Period9 from "./unit9-lesson5-period9";
+import * as unit10Lesson5Period9 from "./unit10-lesson5-period9";
+import * as unit11Lesson5Period9 from "./unit11-lesson5-period9";
+import * as unit12Lesson5Period9 from "./unit12-lesson5-period9";
+import * as unit13Lesson5Period9 from "./unit13-lesson5-period9";
+import * as unit14Lesson5Period9 from "./unit14-lesson5-period9";
+import * as unit15Lesson5Period9 from "./unit15-lesson5-period9";
+import * as unit16Lesson5Period9 from "./unit16-lesson5-period9";
+import * as unit17Lesson5Period9 from "./unit17-lesson5-period9";
+import * as unit18Lesson5Period9 from "./unit18-lesson5-period9";
+import * as unit19Lesson5Period9 from "./unit19-lesson5-period9";
+import * as unit20Lesson5Period9 from "./unit20-lesson5-period9";
+
 export const CONTENT = {
   "unit1-lesson1-period1": unit1Lesson1Period1,
   "unit1-lesson1-period2": unit1Lesson1Period2,
@@ -340,6 +361,26 @@ export const CONTENT = {
   "unit19-lesson4-period8": unit19Lesson4Period8,
   "unit20-lesson4-period7": unit20Lesson4Period7,
   "unit20-lesson4-period8": unit20Lesson4Period8,
+  "unit1-lesson5-period9": unit1Lesson5Period9,
+  "unit2-lesson5-period9": unit2Lesson5Period9,
+  "unit3-lesson5-period9": unit3Lesson5Period9,
+  "unit4-lesson5-period9": unit4Lesson5Period9,
+  "unit5-lesson5-period9": unit5Lesson5Period9,
+  "unit6-lesson5-period9": unit6Lesson5Period9,
+  "unit7-lesson5-period9": unit7Lesson5Period9,
+  "unit8-lesson5-period9": unit8Lesson5Period9,
+  "unit9-lesson5-period9": unit9Lesson5Period9,
+  "unit10-lesson5-period9": unit10Lesson5Period9,
+  "unit11-lesson5-period9": unit11Lesson5Period9,
+  "unit12-lesson5-period9": unit12Lesson5Period9,
+  "unit13-lesson5-period9": unit13Lesson5Period9,
+  "unit14-lesson5-period9": unit14Lesson5Period9,
+  "unit15-lesson5-period9": unit15Lesson5Period9,
+  "unit16-lesson5-period9": unit16Lesson5Period9,
+  "unit17-lesson5-period9": unit17Lesson5Period9,
+  "unit18-lesson5-period9": unit18Lesson5Period9,
+  "unit19-lesson5-period9": unit19Lesson5Period9,
+  "unit20-lesson5-period9": unit20Lesson5Period9,
 };
 
 export function getContent(contentKey) {
