@@ -215,6 +215,27 @@ import * as unit18period9 from "../src/data/content/unit18-lesson5-period9.js";
 import * as unit19period9 from "../src/data/content/unit19-lesson5-period9.js";
 import * as unit20period9 from "../src/data/content/unit20-lesson5-period9.js";
 
+import * as unit1period10 from "../src/data/content/unit1-lesson5-period10.js";
+import * as unit2period10 from "../src/data/content/unit2-lesson5-period10.js";
+import * as unit3period10 from "../src/data/content/unit3-lesson5-period10.js";
+import * as unit4period10 from "../src/data/content/unit4-lesson5-period10.js";
+import * as unit5period10 from "../src/data/content/unit5-lesson5-period10.js";
+import * as unit6period10 from "../src/data/content/unit6-lesson5-period10.js";
+import * as unit7period10 from "../src/data/content/unit7-lesson5-period10.js";
+import * as unit8period10 from "../src/data/content/unit8-lesson5-period10.js";
+import * as unit9period10 from "../src/data/content/unit9-lesson5-period10.js";
+import * as unit10period10 from "../src/data/content/unit10-lesson5-period10.js";
+import * as unit11period10 from "../src/data/content/unit11-lesson5-period10.js";
+import * as unit12period10 from "../src/data/content/unit12-lesson5-period10.js";
+import * as unit13period10 from "../src/data/content/unit13-lesson5-period10.js";
+import * as unit14period10 from "../src/data/content/unit14-lesson5-period10.js";
+import * as unit15period10 from "../src/data/content/unit15-lesson5-period10.js";
+import * as unit16period10 from "../src/data/content/unit16-lesson5-period10.js";
+import * as unit17period10 from "../src/data/content/unit17-lesson5-period10.js";
+import * as unit18period10 from "../src/data/content/unit18-lesson5-period10.js";
+import * as unit19period10 from "../src/data/content/unit19-lesson5-period10.js";
+import * as unit20period10 from "../src/data/content/unit20-lesson5-period10.js";
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../public/audio");
 
@@ -412,6 +433,26 @@ const CONTENT_MODULES = [
   unit18period9,
   unit19period9,
   unit20period9,
+  unit1period10,
+  unit2period10,
+  unit3period10,
+  unit4period10,
+  unit5period10,
+  unit6period10,
+  unit7period10,
+  unit8period10,
+  unit9period10,
+  unit10period10,
+  unit11period10,
+  unit12period10,
+  unit13period10,
+  unit14period10,
+  unit15period10,
+  unit16period10,
+  unit17period10,
+  unit18period10,
+  unit19period10,
+  unit20period10,
 ];
 
 function collectTexts() {
@@ -427,6 +468,7 @@ function collectTexts() {
     (mod.wheelJudge?.rounds || []).forEach((r) => texts.add(r.audioText));
     (mod.wheelJudgeIcon?.rounds || []).forEach((r) => texts.add(r.audioText));
     (mod.cardPick?.cards || []).forEach((c) => texts.add(c.word));
+    (mod.listenTick?.rounds || []).forEach((r) => texts.add(r.audioText));
     (mod.sentenceScramble?.sentences || []).forEach((s) => {
       texts.add(s.target);
       if (s.prompt) texts.add(s.prompt);

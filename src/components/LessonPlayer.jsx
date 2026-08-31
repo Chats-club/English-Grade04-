@@ -13,6 +13,7 @@ import WheelJudgeIconStep from "@/components/steps/WheelJudgeIconStep";
 import CardPickTranslateStep from "@/components/steps/CardPickTranslateStep";
 import SentenceScrambleStep from "@/components/steps/SentenceScrambleStep";
 import ReadMatchStep from "@/components/steps/ReadMatchStep";
+import ListenTickStep from "@/components/steps/ListenTickStep";
 import ClockFinderStep from "@/components/steps/ClockFinderStep";
 import CompleteStep from "@/components/steps/CompleteStep";
 
@@ -32,6 +33,7 @@ function buildSteps(content) {
   if (content.cardPick) steps.push({ type: "cardPick", data: content.cardPick });
   if (content.sentenceScramble) steps.push({ type: "sentenceScramble", data: content.sentenceScramble });
   if (content.readMatch) steps.push({ type: "readMatch", data: content.readMatch });
+  if (content.listenTick) steps.push({ type: "listenTick", data: content.listenTick });
   if (content.clockFinder) steps.push({ type: "clockFinder" });
   steps.push({ type: "complete" });
   return steps;
@@ -195,6 +197,14 @@ export default function LessonPlayer({ unitTitle, lessonTitle, topic, content, b
 
           {step.type === "readMatch" && (
             <ReadMatchStep
+              data={step.data}
+              onScore={(amount) => setScore((s) => s + amount)}
+              onDone={goNext}
+            />
+          )}
+
+          {step.type === "listenTick" && (
+            <ListenTickStep
               data={step.data}
               onScore={(amount) => setScore((s) => s + amount)}
               onDone={goNext}
