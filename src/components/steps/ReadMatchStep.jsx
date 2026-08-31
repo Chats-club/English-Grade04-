@@ -56,7 +56,7 @@ export default function ReadMatchStep({ data, onScore, onDone }) {
   return (
     <div>
       <SectionLabel>Read and match</SectionLabel>
-      <p className="mb-4 text-sm text-[#5B6A72]">
+      <p className="mb-4 text-base text-[#5B6A72]">
         Tap one on the left, then tap its match on the right.
       </p>
 
@@ -68,11 +68,11 @@ export default function ReadMatchStep({ data, onScore, onDone }) {
             const isWrong = wrongPair?.leftId === p.id;
             return (
               <div key={p.id} className="flex items-center gap-1">
-                <AudioButton text={p.left} size={16} idleColor="#B7A883" />
+                <AudioButton text={p.left} size={20} idleColor="#B7A883" />
                 <button
                   onClick={() => handleLeftClick(p.id)}
                   disabled={isMatched}
-                  className={`flex-1 rounded-xl px-2.5 py-2 text-left text-xs font-semibold border-2 transition-all ${
+                  className={`flex-1 rounded-xl px-2.5 py-2 text-left text-sm font-semibold border-2 transition-all ${
                     isMatched
                       ? "border-mint bg-[#EFFAF4] text-navy opacity-70"
                       : isWrong
@@ -97,7 +97,7 @@ export default function ReadMatchStep({ data, onScore, onDone }) {
                 key={r.id}
                 onClick={() => handleRightClick(r)}
                 disabled={isMatched}
-                className={`rounded-xl px-2.5 py-2 text-left text-xs font-semibold border-2 transition-all ${
+                className={`rounded-xl px-2.5 py-2 text-left text-sm font-semibold border-2 transition-all ${
                   isMatched
                     ? "border-mint bg-[#EFFAF4] text-navy opacity-70"
                     : isWrong
